@@ -32,9 +32,9 @@ public class CustomerController {
 
 
     @GetMapping(IConstants.GET_CUSTOMER_DETAILS)
-    public Customer findCustomerById(@PathVariable("customerId") String customerId){
+    public Customer findCustomerById(@PathVariable("customerId") Long customerId){
         return customerService.findCustomerById(customerId);    
     }
 
-    
+
 }

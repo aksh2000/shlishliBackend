@@ -20,7 +20,7 @@ public class CustomerService {
 		return customerRepository.save(customer);
 	}
 
-	public Customer findCustomerById(String id) {
+	public Customer findCustomerById(Long id) {
 		return customerRepository.findById(id).get();
 	}
 
