@@ -3,7 +3,7 @@ server:
 
 spring:
     application:
-        name: CUSTOMER-SERVICE
+        name: CART-SERVICE
 
 
 eureka:
