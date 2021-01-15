@@ -1,0 +1,16 @@
+server:
+    port: 9005
+
+spring:
+    application:
+        name: ORDERS-SERVICE
+
+
+eureka:
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://10.177.68.20:8761/eureka
+    instance:
+        hostname: 10.177.68.20
