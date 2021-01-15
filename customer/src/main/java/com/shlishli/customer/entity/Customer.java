@@ -15,7 +15,7 @@ public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long tableId;
+    private Long customerId;
 
     private String firebaseCustomerId;
     // customer Id would be the ID obtained after a succesful Signup /Sign in with firebase
@@ -54,9 +54,11 @@ public class Customer {
     public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
-    public void setTableId(Long tableId) {
-        this.tableId = tableId;
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
     }
+    
 
     public String getAddress() {
         return address;
@@ -82,9 +84,11 @@ public class Customer {
     public String getMobileNumber() {
         return mobileNumber;
     }
-    public Long getTableId() {
-        return tableId;
+
+    public Long getCustomerId() {
+        return customerId;
     }
+    
 
 
     
