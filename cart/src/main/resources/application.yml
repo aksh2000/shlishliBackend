@@ -1,9 +1,9 @@
 server:
-    port: 9001
+    port: 9007
 
 spring:
     application:
-        name: CUSTOMER-SERVICE
+        name: CART-SERVICE
 
 
 eureka:
@@ -11,6 +11,6 @@ eureka:
         register-with-eureka: true
         fetch-registry: true
         service-url:
-            defaultZone: http://localhost:8761/eureka
+            defaultZone: http://10.177.68.20:8761/eureka
     instance:
-        hostname: localhost
+        hostname: 10.177.68.20
