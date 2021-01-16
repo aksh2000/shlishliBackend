@@ -1,7 +1,7 @@
 package com.shlishli.inventory.utilities;
 
 public interface IConstants {
-    String INVENTORY = "/inventory";
+    String INVENTORY = "/inventories";
     String ADD_INVENTORY_ITEM = "/add";
     String GET_INVENTORY_ITEMS_BY_ITEM_ID = "/getInventoryItems/{inventoryItemId}";
     String GET_INVENTORY_ITEMS_BY_PRODUCT_ID = "/getInventoryItems/{productId}";

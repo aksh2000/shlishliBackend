@@ -1,7 +1,7 @@
 package com.shlishli.cart.utilities;
 
 public interface IConstants {
-    String CART = "/cart";
+    String CART = "/carts";
     String ADD_TO_CART = "/add";
     String GET_CART_ITEM_DETAILS = "/getCartItems/{customerId}";
     String CART_TABLE = "cart";
