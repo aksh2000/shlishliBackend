@@ -2,6 +2,7 @@ package com.example.api.data.junction.controller;
 
 
 import com.example.api.data.junction.VO.ProductPageDetails;
+import com.example.api.data.junction.VO.ResponseTemplate;
 import com.example.api.data.junction.entity.Merchant;
 import com.example.api.data.junction.entity.Product;
 import com.example.api.data.junction.service.ApiDataJunctionService;
@@ -39,7 +40,7 @@ public class ApiDataJunctionController {
     }
 
     @GetMapping(value = "/getProductDetails/{productId}")
-    public ProductPageDetails getProductDetails(@PathVariable("productId") int productId){
+    public ResponseTemplate getProductDetails(@PathVariable("productId") int productId){
         return apiDataJunctionService.getProductDetails(productId);
     }
 }

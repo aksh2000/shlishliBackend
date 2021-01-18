@@ -1,59 +1,73 @@
 package com.example.cloud.gateway;
 
+import com.example.cloud.ResponseTemplate;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FallBackMethodController {
 
+    ResponseTemplate responseTemplate = new ResponseTemplate(false);
+
     @GetMapping("/customerServiceFallBack")
-    public String customerServiceFallBackMethod(){
-        return "Customer Service is taking longer than expected.. Please try later";
+    public ResponseTemplate customerServiceFallBackMethod(){
+        responseTemplate.setError("Customer Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
     @GetMapping("/departmentServiceFallBack")
-    public String departmentServiceFallBackMethod(){
-        return "Department Service is taking longer than expected.. Please try later";
+    public ResponseTemplate departmentServiceFallBackMethod(){
+        responseTemplate.setError("Department Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
     @GetMapping("/merchantServiceFallBack")
-    public String merchantServiceFallBackMethod(){
-        return "Merchant Service is taking longer than expected.. Please try later";
+    public ResponseTemplate merchantServiceFallBackMethod(){
+        responseTemplate.setError("Merchant Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
 
     @GetMapping("/productServiceFallBack")
-    public String productServiceFallBackMethod(){
-        return "Product Service is taking longer than expected.. Please try later";
+    public ResponseTemplate productServiceFallBackMethod(){
+        responseTemplate.setError("Product Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
     @GetMapping("/categoryServiceFallBack")
-    public String categoryServiceFallBackMethod(){
-        return "Category Service is taking longer than expected.. Please try later";
+    public ResponseTemplate categoryServiceFallBackMethod(){
+        responseTemplate.setError("Category Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
     @GetMapping("/ordersServiceFallBack")
-    public String ordersServiceFallBackMethod(){
-        return "Orders Service is taking longer than expected.. Please try later";
+    public ResponseTemplate ordersServiceFallBackMethod(){
+        responseTemplate.setError("Order Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
     @GetMapping("/userActivityServiceFallBack")
-    public String userActivityServiceFallBackMethod(){
-        return "User_Activity Service is taking longer than expected.. Please try later";
+    public ResponseTemplate userActivityServiceFallBackMethod(){
+        responseTemplate.setError("UserActivity Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
     @GetMapping("/cartServiceFallBack")
-    public String cartServiceFallBackMethod(){
-        return "Cart Service is taking longer than expected.. Please try later";
+    public ResponseTemplate cartServiceFallBackMethod(){
+        responseTemplate.setError("Cart Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
     @GetMapping("/inventoryServiceFallBack")
-    public String inventoryServiceFallBackMethod(){
-        return "Inventory Service is taking longer than expected.. Please try later";
+    public ResponseTemplate inventoryServiceFallBackMethod(){
+        responseTemplate.setError("Inventory Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
     @GetMapping("/apiJunctionServiceFallBack")
-    public String apiJunctionServiceFallBackMethod(){
-        return "API Junction Service is taking longer than expected.. Please try later";
+    public ResponseTemplate apiJunctionServiceFallBackMethod(){
+        responseTemplate.setError("ApiJunction Service is taking longer than expected.. Please try later");
+        return responseTemplate;
     }
 
 }
