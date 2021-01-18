@@ -33,5 +33,8 @@ public class ProductService {
 	public List<Product> getAllProductsInASpecificCategory(Long categoryId) {
 		return productRepository.findByCategoryId(categoryId);
 	}
-    
+
+	public List<Product> getTopProducts() {
+		return productRepository.findTopProducts();
+	}
 }

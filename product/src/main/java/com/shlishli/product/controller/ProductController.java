@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin
 @RequestMapping(IConstants.PRODUCTS)
 public class ProductController {
     
@@ -34,8 +35,14 @@ public class ProductController {
     public List<Product> getAllProducts(){
         return productService.getProducts();
     }
+
     @GetMapping(value = IConstants.GET_PRODUCTS_OF_A_CATEGORY)     //This method will take categoryId and return all products in that category
-    public List<Product> getAllProductsInASpecificCategory(@PathVariable("categoryid") Long categoryId){
+    public List<Product> getAllProductsInASpecificCategory(@PathVariable("categoryId") Long categoryId){
         return productService.getAllProductsInASpecificCategory(categoryId);
+    }
+
+    @GetMapping(value = "/getTopProducts")
+    public List<Product> getTopProducts(){
+        return productService.getTopProducts();
     }
 }

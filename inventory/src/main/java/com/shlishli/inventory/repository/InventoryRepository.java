@@ -25,4 +25,7 @@ public interface InventoryRepository extends CrudRepository<InventoryItem, Long>
     @Query(value = "update inventory_item set quantity=?3  where product_id=?1 and merchant_id=?2", nativeQuery = true)
     void updateQuantity(Long productId, Long merchantId, Integer quantity);
 
+
+
+    InventoryItem findFirstByProductIdOrderByPrice(Long productId);
 }
