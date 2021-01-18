@@ -2,6 +2,7 @@ package com.example.api.data.junction.service;
 
 import com.example.api.data.junction.VO.ProductPageDetails;
 import com.example.api.data.junction.VO.ProductPageMerchantDetails;
+import com.example.api.data.junction.VO.ResponseTemplate;
 import com.example.api.data.junction.entity.Inventory;
 import com.example.api.data.junction.entity.Merchant;
 import com.example.api.data.junction.entity.Product;
@@ -23,12 +24,14 @@ public class ApiDataJunctionService {
 
 
     public Product test(){
-        Product product = restTemplate.getForObject("http://PRODUCT-SERVICE/products/getProductDetails/6", Product.class);
+        Product product = restTemplate.getForObject("http://API-GATEWAY/products/getProductDetails/6", Product.class);
         return product;
     }
 
-    public ProductPageDetails getProductDetails(int productId){
-  
+    public ResponseTemplate getProductDetails(int productId){
+
+        ResponseTemplate responseTemplate = new ResponseTemplate(true);
+        // responseTemplate.success = true;
 
         ProductPageDetails productPageDetails = new ProductPageDetails();
         List<Inventory> inventories;
@@ -65,7 +68,8 @@ public class ApiDataJunctionService {
 
 
         productPageDetails.merchantDetails = productPageMerchantDetails;
-        return productPageDetails;
+        responseTemplate.data = productPageDetails;
+        return responseTemplate;
 
     }
 }
