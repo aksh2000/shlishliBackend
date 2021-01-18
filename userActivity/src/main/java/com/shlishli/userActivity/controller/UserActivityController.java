@@ -34,4 +34,9 @@ public class UserActivityController {
     {
         return userActivityService.getLogs(userId);
     }
+
+    @GetMapping(value = "/findByCustomerId/{customerId}")
+    List<UserActivity> findByCustomerId(@PathVariable("customerId") Long customerId){
+        return userActivityService.findByCustomerId(customerId);
+    }
 }

@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.Optional;
+
 @RestController
 @CrossOrigin
 @RequestMapping(value = IConstants.ORDERS)
@@ -32,5 +35,10 @@ public class OrderController {
     Order getOrderDetails(@PathVariable("orderId") Long id)
     {
         return orderService.findOrderById(id);
+    }
+
+    @GetMapping(value="/getOrderDetailsByCustomerId/{customerId}")
+    List<Order> getOrderDetailsByCustomerId(@PathVariable("customerId") Long customerId){
+        return orderService.getOrderDetailsByCustomerId(customerId);
     }
 }

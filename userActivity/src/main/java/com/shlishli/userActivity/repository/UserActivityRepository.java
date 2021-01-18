@@ -10,5 +10,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserActivityRepository extends CrudRepository<UserActivity,Long> {
     List<UserActivity> findByUserId(String userId);
+
+    List<UserActivity> findByCustomerId(Long customerId);
 }
 

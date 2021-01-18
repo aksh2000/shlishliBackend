@@ -24,5 +24,8 @@ public class CustomerService {
 		return customerRepository.findById(id).get();
 	}
 
-    
+
+    public Customer getCustomerDetailsByFirebaseUserId(String firebaseUserId) {
+		return customerRepository.findByFirebaseCustomerId(firebaseUserId);
+    }
 }
