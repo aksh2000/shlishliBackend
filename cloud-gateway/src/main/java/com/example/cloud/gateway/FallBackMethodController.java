@@ -51,4 +51,9 @@ public class FallBackMethodController {
         return "Inventory Service is taking longer than expected.. Please try later";
     }
 
+    @GetMapping("/apiJunctionServiceFallBack")
+    public String apiJunctionServiceFallBackMethod(){
+        return "API Junction Service is taking longer than expected.. Please try later";
+    }
+
 }
