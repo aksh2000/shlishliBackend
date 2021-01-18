@@ -5,4 +5,5 @@ public interface IConstants {
     String ADD_CATEGORY = "/add";
     String GET_CATEGORY_DETAILS = "/getCategories/{categoryId}";
     String CATEGORY_TABLE = "categories";
+    String ALL_CATEGORIES = "/getAllCategories";
 }

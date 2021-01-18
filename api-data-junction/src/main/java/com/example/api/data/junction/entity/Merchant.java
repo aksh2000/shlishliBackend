@@ -1,26 +1,11 @@
-package com.shlishli.merchant.entity;
+package com.example.api.data.junction.entity;
 
+public class Merchant   {
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import com.shlishli.merchant.utilities.IConstants;
-
-
-
-@Entity
-@Table(name = IConstants.MERCHANTS_TABLE)
-public class Merchant {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long merchantId;
 
     private String firebaseCustomerId;
-    
+
     private String businessName;
     private String firstName;
     private String lastName;
@@ -29,6 +14,20 @@ public class Merchant {
     private int rating;
     private String gstNumber;
 
+    public Merchant(Long merchantId, String firebaseCustomerId, String businessName, String firstName, String lastName, String address, String mobileNumber, int rating, String gstNumber) {
+        this.merchantId = merchantId;
+        this.firebaseCustomerId = firebaseCustomerId;
+        this.businessName = businessName;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.mobileNumber = mobileNumber;
+        this.rating = rating;
+        this.gstNumber = gstNumber;
+    }
+
+    public Merchant() {
+    }
 
     public Long getMerchantId() {
         return merchantId;

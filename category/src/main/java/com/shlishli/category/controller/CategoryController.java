@@ -7,6 +7,7 @@ import com.shlishli.category.service.CategoryService;
 import com.shlishli.category.utilities.IConstants;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@CrossOrigin
 @RequestMapping(IConstants.CATEGORIES)
 public class CategoryController {
 
@@ -27,7 +29,7 @@ public class CategoryController {
         return categoryService.saveCategory(category);
     }
 
-    @GetMapping(value = IConstants.GET_CATEGORY_DETAILS)
+    @GetMapping(value = IConstants.ALL_CATEGORIES)
     public List<Category> getAllCategories(){
         return categoryService.getAllCategories();
     }

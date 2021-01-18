@@ -89,6 +89,15 @@ spring:
             args:
               name: INVENTORY-SERVICE
               fallbackuri: forward:/inventoryServiceFallBack
+      - id: API-DATA-JUNCTION
+        uri: lb://API-DATA-JUNCTION
+        predicates:
+          - Path=/apiJunction/**
+        filters:
+          - name: CircuitBreaker
+            args:
+              name: API-DATA-JUNCTION
+              fallbackuri: forward:/apiJunctionServiceFallBack
       
 
 hystrix:
