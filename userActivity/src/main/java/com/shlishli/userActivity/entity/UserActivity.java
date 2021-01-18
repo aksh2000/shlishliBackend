@@ -16,27 +16,33 @@ public class UserActivity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long userActivityId;
-    private String userId;
+    private Long userId;
+
+    private Long customerId;
     private Date date = new Date();
-    public String getUserId() {
-        return userId;
+
+    public Long getCustomerId() {
+        return customerId;
     }
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-    public Long getUserActivityId() {
-        return userActivityId;
-    }
-    public void setId(Long userActivityId) {
-        this.userActivityId=userActivityId;
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
     }
 
     public Date getDate() {
         return date;
     }
-    public void setDate() {
-        this.date = new Date();
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
 }

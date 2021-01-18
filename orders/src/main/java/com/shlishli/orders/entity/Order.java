@@ -6,7 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.shlishli.orders.utilities.IConstants;
+
+import java.util.Date;
 
 @Entity
 @Table(name = IConstants.ORDERS_TABLE)
@@ -15,13 +18,15 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
     
-    private String customerId;
-    private String productId;
+    private Long customerId;
+    private Long inventoryId;
     private int quantity;
-    private double price;
+
     private String status;
-    private String merchantId;
-    private String orderedOn;
+
+
+    private Date orderedOn = new Date();
+
 
     public Long getOrderId() {
         return orderId;
@@ -31,20 +36,20 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public String getCustomerId() {
+    public Long getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(String customerId) {
+    public void setCustomerId(Long customerId) {
         this.customerId = customerId;
     }
 
-    public String getProductId() {
-        return productId;
+    public Long getInventoryId() {
+        return inventoryId;
     }
 
-    public void setProductId(String productId) {
-        this.productId = productId;
+    public void setInventoryId(Long inventoryId) {
+        this.inventoryId = inventoryId;
     }
 
     public int getQuantity() {
@@ -55,14 +60,6 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -71,19 +68,11 @@ public class Order {
         this.status = status;
     }
 
-    public String getMerchantId() {
-        return merchantId;
-    }
-
-    public void setMerchantId(String merchantId) {
-        this.merchantId = merchantId;
-    }
-
-    public String getOrderedOn() {
+    public Date getOrderedOn() {
         return orderedOn;
     }
 
-    public void setOrderedOn(String orderedOn) {
+    public void setOrderedOn(Date orderedOn) {
         this.orderedOn = orderedOn;
     }
 }

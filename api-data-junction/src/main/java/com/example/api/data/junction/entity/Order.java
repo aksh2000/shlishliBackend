@@ -1,33 +1,21 @@
 package com.example.api.data.junction.entity;
 
+import java.util.Date;
+
 public class Order {
 
     private Long orderId;
 
-    private String customerId;
-    private String productId;
+    private Long customerId;
+    private Long inventoryId;
     private int quantity;
-    private double price;
+
     private String status;
-    private String merchantId;
-    private String orderedOn;
 
-    public Order(Long orderId, String customerId, String productId, int quantity, double price, String status, String merchantId, String orderedOn) {
-        this.orderId = orderId;
-        this.customerId = customerId;
-        this.productId = productId;
-        this.quantity = quantity;
-        this.price = price;
-        this.status = status;
-        this.merchantId = merchantId;
-        this.orderedOn = orderedOn;
-    }
 
-    public Order() {
-    }
+    private Date orderedOn;
 
     public Long getOrderId() {
-
         return orderId;
     }
 
@@ -35,20 +23,20 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public String getCustomerId() {
+    public Long getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(String customerId) {
+    public void setCustomerId(Long customerId) {
         this.customerId = customerId;
     }
 
-    public String getProductId() {
-        return productId;
+    public Long getInventoryId() {
+        return inventoryId;
     }
 
-    public void setProductId(String productId) {
-        this.productId = productId;
+    public void setInventoryId(Long inventoryId) {
+        this.inventoryId = inventoryId;
     }
 
     public int getQuantity() {
@@ -59,14 +47,6 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -75,19 +55,11 @@ public class Order {
         this.status = status;
     }
 
-    public String getMerchantId() {
-        return merchantId;
-    }
-
-    public void setMerchantId(String merchantId) {
-        this.merchantId = merchantId;
-    }
-
-    public String getOrderedOn() {
+    public Date getOrderedOn() {
         return orderedOn;
     }
 
-    public void setOrderedOn(String orderedOn) {
+    public void setOrderedOn(Date orderedOn) {
         this.orderedOn = orderedOn;
     }
 }

@@ -21,4 +21,8 @@ public class UserActivityService {
     public List<UserActivity> getLogs(String userId) {
         return userActivityRepository.findByUserId(userId);
     }
+
+    public List<UserActivity> findByCustomerId(Long customerId) {
+        return userActivityRepository.findByCustomerId(customerId);
+    }
 }

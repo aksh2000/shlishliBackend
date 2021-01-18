@@ -34,5 +34,10 @@ public class CustomerController {
         return customerService.findCustomerById(customerId);    
     }
 
+    @GetMapping(value = "getCustomerDetailsByFirebaseUserId/{firebaseUserId}")
+    public Customer getCustomerDetailsByFirebaseUserId(@PathVariable("firebaseUserId") String firebaseUserId){
+        return customerService.getCustomerDetailsByFirebaseUserId(firebaseUserId);
+    }
+
 
 }
