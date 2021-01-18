@@ -1,6 +1,7 @@
 package com.shlishli.inventory.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.shlishli.inventory.entity.InventoryItem;
 import com.shlishli.inventory.entity.UpdateQuantity;
@@ -8,6 +9,7 @@ import com.shlishli.inventory.service.InventoryService;
 import com.shlishli.inventory.utilities.IConstants;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 @RequestMapping(value = IConstants.INVENTORY)
 public class InventoryController {
     
@@ -55,5 +58,15 @@ public class InventoryController {
     String updateQuantityOfInventory(@RequestBody UpdateQuantity updateQuantity){
         inventoryService.updateQuantity(updateQuantity);
         return "Updated sucessfully";
+    }
+
+    @GetMapping(value = "/getMinPrice/{productId}")
+    InventoryItem getMinPriceByProductId(@PathVariable("productId") Long productId){
+        return inventoryService.getMinPriceByProductId(productId);
+    }
+
+    @GetMapping(value = "/getInventoryDetails/{inventoryId}")
+    Optional<InventoryItem> getInventoryDetails(@PathVariable("inventoryId") Long inventoryId){
+        return inventoryService.getInventoryDetails(inventoryId);
     }
 }

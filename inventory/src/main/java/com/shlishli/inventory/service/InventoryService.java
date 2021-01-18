@@ -1,6 +1,7 @@
 package com.shlishli.inventory.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.shlishli.inventory.entity.InventoryItem;
 import com.shlishli.inventory.entity.UpdateQuantity;
@@ -35,5 +36,13 @@ public class InventoryService {
         inventoryRepository.updateQuantity(updateQuantity.getProductId(), updateQuantity.getMerchantId(), updateQuantity.getQuantity());
     
 	}
-    
+
+	public InventoryItem getMinPriceByProductId(Long productId) {
+//		return inventoryRepository.getMinPriceByProductId(productId);
+		return inventoryRepository.findFirstByProductIdOrderByPrice(productId);
+	}
+
+	public Optional<InventoryItem> getInventoryDetails(Long inventoryId) {
+		return inventoryRepository.findById(inventoryId);
+	}
 }

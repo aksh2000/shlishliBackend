@@ -12,47 +12,39 @@ public class CartItem {
     private Long cartId;
 
     private Long customerId;
-    private Long productId;
-    private Long merchantId;
     private Integer quantity;
-    private Double price;
+    private Long inventoryId;
 
 
     public Long getCartId() {
         return cartId;
     }
 
-    public Long getCustomerId() {
-        return customerId;
-    }
-    public Long getMerchantId() {
-        return merchantId;
-    }
-    public Double getPrice() {
-        return price;
-    }
-    public Long getProductId() {
-        return productId;
-    }
-    public Integer getQuantity() {
-        return quantity;
-    }
     public void setCartId(Long cartId) {
         this.cartId = cartId;
     }
+
+    public Long getCustomerId() {
+        return customerId;
+    }
+
     public void setCustomerId(Long customerId) {
         this.customerId = customerId;
     }
-    public void setMerchantId(Long merchantId) {
-        this.merchantId = merchantId;
+
+    public Integer getQuantity() {
+        return quantity;
     }
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-    public void setProductId(Long productId) {
-        this.productId = productId;
-    }
+
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    public Long getInventoryId() {
+        return inventoryId;
+    }
+
+    public void setInventoryId(Long inventoryId) {
+        this.inventoryId = inventoryId;
     }
 }
