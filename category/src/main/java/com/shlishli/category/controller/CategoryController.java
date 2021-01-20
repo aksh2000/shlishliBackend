@@ -1,5 +1,6 @@
 package com.shlishli.category.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,5 +38,15 @@ public class CategoryController {
     @GetMapping(value = IConstants.GET_CATEGORY_DETAILS)
     public Optional<Category> findById(@PathVariable("categoryId") Long categoryId) {
         return categoryService.findById(categoryId);
+    }
+
+    @PostMapping(value = "/addMultipleCategories")
+    public List<Category> addMultipleCategories(@RequestBody List<Category> categories){
+        List<Category> addedCategories = new ArrayList<>();
+        for (Category category:categories) {
+            Category category1 = categoryService.saveCategory(category);
+            addedCategories.add(category1);
+        }
+        return addedCategories;
     }
 }

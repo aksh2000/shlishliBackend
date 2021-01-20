@@ -11,4 +11,6 @@ import java.util.Optional;
 @Repository
 public interface OrderRepository extends CrudRepository<Order,Long> {
     List<Order> findByCustomerId(Long customerId);
+
+    List<Order> findByInventoryId(Long inventoryId);
 }

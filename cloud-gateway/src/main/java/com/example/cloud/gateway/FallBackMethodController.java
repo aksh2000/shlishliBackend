@@ -2,10 +2,12 @@ package com.example.cloud.gateway;
 
 import com.example.cloud.ResponseTemplate;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class FallBackMethodController {
 
     ResponseTemplate responseTemplate = new ResponseTemplate(false);
@@ -69,5 +71,13 @@ public class FallBackMethodController {
         responseTemplate.setError("ApiJunction Service is taking longer than expected.. Please try later");
         return responseTemplate;
     }
+
+
+    @GetMapping("/solrServiceFallBack")
+    public ResponseTemplate solrServiceFallBackMethod(){
+        responseTemplate.setError("SOLR Service is taking longer than expected.. Please try later");
+        return responseTemplate;
+    }
+
 
 }

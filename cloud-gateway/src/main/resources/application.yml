@@ -98,6 +98,15 @@ spring:
             args:
               name: API-DATA-JUNCTION
               fallbackuri: forward:/apiJunctionServiceFallBack
+#      - id: SOLR-SERVICE
+#              uri: lb://SOLR-SERVICE
+#              predicates:
+#                - Path=/solr/**
+#              filters:
+#                - name: CircuitBreaker
+#                  args:
+#                    name: SOLR-SERVICE
+#                    fallbackuri: forward:/solrServiceFallBack
       
 
 hystrix:

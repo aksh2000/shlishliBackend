@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Optional;
+
 @RestController
 @CrossOrigin
 @RequestMapping(IConstants.MERCHANTS)
@@ -28,7 +30,12 @@ public class MerchantController {
     }
 
     @GetMapping(IConstants.GET_MERCHANT_DETAILS)
-    public Merchant findCustomerById(@PathVariable("merchantId") Long merchantId){
+    public Optional<Merchant> findCustomerById(@PathVariable("merchantId") Long merchantId){
         return merchantService.findMerchantById(merchantId);    
     }
+
+    @GetMapping(IConstants.GET_MERCHANT_DETAILS_BY_FIREBASE_ID)
+    public Merchant findByFirebaseMerchantId(@PathVariable("firebaseMerchantId") String firebaseMerchantId)
+    {
+        return merchantService.findByFirebaseMerchantId(firebaseMerchantId);}
 }

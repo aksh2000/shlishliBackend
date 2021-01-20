@@ -1,5 +1,6 @@
 package com.shlishli.product.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.shlishli.product.entity.Product;
@@ -44,5 +45,15 @@ public class ProductController {
     @GetMapping(value = "/getTopProducts")
     public List<Product> getTopProducts(){
         return productService.getTopProducts();
+    }
+
+    @PostMapping(value = "/addMultipleProducts")
+    public List<Product> addMultipleProducts(@RequestBody List<Product> products){
+        List<Product> addedProducts = new ArrayList<>();
+        for (Product product: products) {
+            Product product1 = productService.saveProduct(product);
+            addedProducts.add(product1);
+        }
+        return addedProducts;
     }
 }

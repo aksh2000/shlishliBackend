@@ -60,4 +60,14 @@ public class ApiDataJunctionController {
         return apiDataJunctionService.getCartDetails(customerId);
     }
 
+    @GetMapping(value="/getOrderDetailsByCustomerId/{customerId}")
+    public ResponseTemplate getOrderDetailsByCustomerId(@PathVariable("customerId") Long customerId ){
+        return apiDataJunctionService.getOrderDetailsByCustomerId(customerId);
+    }
+
+    @GetMapping(value="/getOrderDetailsByMerchantId/{merchantId}")
+    public ResponseTemplate getOrderDetailsByMerchantId(@PathVariable("merchantId") Long merchantId ){
+        return apiDataJunctionService.getOrderDetailsByMerchantId(merchantId);
+    }
+
 }

@@ -41,4 +41,11 @@ public class OrderController {
     List<Order> getOrderDetailsByCustomerId(@PathVariable("customerId") Long customerId){
         return orderService.getOrderDetailsByCustomerId(customerId);
     }
+
+    @GetMapping(value = "/findByInventoryId/{inventoryId}")
+    List<Order> findByInventoryId(@PathVariable("inventoryId") Long inventoryId){
+        return orderService.findByInventoryId(inventoryId);
+    }
+
+
 }

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Optional;
+
 @Service
 @Slf4j
 public class MerchantService {
@@ -19,10 +21,13 @@ public class MerchantService {
 		return merchantRepository.save(merchant);
 	}
 
-	public Merchant findMerchantById(Long merchantId) {
-		return merchantRepository.findById(merchantId).get();
+	public Optional<Merchant> findMerchantById(Long merchantId) {
+		return merchantRepository.findById(merchantId);
 	}
-    
 
 
+
+	public Merchant findByFirebaseMerchantId(String firebaseMerchantId) {
+		return merchantRepository.findByFirebaseMerchantId(firebaseMerchantId);
+	}
 }
