@@ -32,10 +32,10 @@ public class InventoryService {
         inventoryRepository.deleteById(inventoryItemId);
 	}
 
-	public void updateQuantity(UpdateQuantity updateQuantity) {
-        inventoryRepository.updateQuantity(updateQuantity.getProductId(), updateQuantity.getMerchantId(), updateQuantity.getQuantity());
-    
-	}
+//	public void updateQuantity(UpdateQuantity updateQuantity) {
+//        inventoryRepository.updateQuantity(updateQuantity.getProductId(), updateQuantity.getMerchantId(), updateQuantity.getQuantity());
+//
+//	}
 
 	public InventoryItem getMinPriceByProductId(Long productId) {
 //		return inventoryRepository.getMinPriceByProductId(productId);
@@ -44,5 +44,15 @@ public class InventoryService {
 
 	public Optional<InventoryItem> getInventoryDetails(Long inventoryId) {
 		return inventoryRepository.findById(inventoryId);
+	}
+
+	public List<InventoryItem> findByMerchantId(Long merchantId) {
+		return inventoryRepository.findByMerchantId(merchantId);
+	}
+
+	public Optional<InventoryItem> updateQuantityOfItem(Long inventoryId, Integer quantity) {
+		inventoryRepository.updateQuantity(inventoryId,quantity);
+		return inventoryRepository.findById(inventoryId);
+
 	}
 }

@@ -54,11 +54,11 @@ public class InventoryController {
     InventoryItem updateInventoryItem(@RequestBody InventoryItem inventoryItem){
         return inventoryService.saveInventoryItem(inventoryItem);
     }
-    @PutMapping(value = IConstants.UPDATE_INVENTORY_ITEM_QUANTITY)
-    String updateQuantityOfInventory(@RequestBody UpdateQuantity updateQuantity){
-        inventoryService.updateQuantity(updateQuantity);
-        return "Updated sucessfully";
-    }
+//    @PutMapping(value = IConstants.UPDATE_INVENTORY_ITEM_QUANTITY)
+//    String updateQuantityOfInventory(@RequestBody UpdateQuantity updateQuantity){
+//        inventoryService.updateQuantity(updateQuantity);
+//        return "Updated sucessfully";
+//    }
 
     @GetMapping(value = "/getMinPrice/{productId}")
     InventoryItem getMinPriceByProductId(@PathVariable("productId") Long productId){
@@ -69,4 +69,16 @@ public class InventoryController {
     Optional<InventoryItem> getInventoryDetails(@PathVariable("inventoryId") Long inventoryId){
         return inventoryService.getInventoryDetails(inventoryId);
     }
+
+    @GetMapping(value = "/updateQuantityOfItem/{inventoryId}/{quantity}")
+    Optional<InventoryItem> updateQuantityOfItem(@PathVariable("inventoryId") Long inventoryId, @PathVariable("quantity") Integer quantity){
+
+        return inventoryService.updateQuantityOfItem(inventoryId, quantity);
+    }
+
+    @GetMapping(value = "/findByMerchantId/{merchantId}")
+    List<InventoryItem> findByMerchantId(@PathVariable("merchantId") Long merchantId){
+        return inventoryService.findByMerchantId(merchantId);
+    }
+
 }

@@ -19,7 +19,7 @@ public class Merchant {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long merchantId;
 
-    private String firebaseCustomerId;
+    private String firebaseMerchantId;
     
     private String businessName;
     private String firstName;
@@ -38,12 +38,12 @@ public class Merchant {
         this.merchantId = merchantId;
     }
 
-    public String getFirebaseCustomerId() {
-        return firebaseCustomerId;
+    public String getFirebaseMerchantId() {
+        return firebaseMerchantId;
     }
 
-    public void setFirebaseCustomerId(String firebaseCustomerId) {
-        this.firebaseCustomerId = firebaseCustomerId;
+    public void setFirebaseMerchantId(String firebaseMerchantId) {
+        this.firebaseMerchantId = firebaseMerchantId;
     }
 
     public String getBusinessName() {

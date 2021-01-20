@@ -1,5 +1,7 @@
 package com.example.shlishli.solr.controller;
 
+import com.example.shlishli.solr.entity.Product;
+import com.example.shlishli.solr.services.EmployeeServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,19 +15,19 @@ public class EmployeeController {
     EmployeeServices employeeServices;
 
     @PostMapping("/save")
-    Employee save(@RequestBody Employee employee)
+    Product save(@RequestBody Product product)
     {
-        return employeeServices.save(employee);
+        return employeeServices.save(product);
     }
 
     @GetMapping(value="/findByName/{firstName}")
-    List<Employee> findByName(@PathVariable("firstName") String firstName)
+    List<Product> findByName(@PathVariable("firstName") String firstName)
     {
         return employeeServices.findByCustomName(firstName);
     }
 
     @GetMapping(value ="/findAll")
-    List<Employee> findAll()
+    List<Product> findAll()
     {
         return employeeServices.findAll();
     }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableHystrix
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class CloudGatewayApplication {
 
 	public static void main(String[] args) {

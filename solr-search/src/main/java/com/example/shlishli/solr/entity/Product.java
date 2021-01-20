@@ -13,27 +13,37 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Indexed
-    private Long id;
+    private String id;
 
 
 
-
+    private Long productId;
     private Long categoryId;
     @Indexed(name = "productName", type = "string")
     private String productName;
     private String description;
     private String imageUrl;
     private String size;
+
+    public Long getProductId() {
+        return productId;
+    }
+
+    public void setProductId(Long productId) {
+        this.productId = productId;
+    }
+
     @Indexed(name = "color", type = "string")
+
     private String color;
     private boolean isTopProduct;
     private String usp;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

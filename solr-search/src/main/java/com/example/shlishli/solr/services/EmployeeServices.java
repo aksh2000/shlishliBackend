@@ -1,14 +1,14 @@
 package com.example.shlishli.solr.services;
 
-import com.example.shlishli.solr.entity.Employee;
+import com.example.shlishli.solr.entity.Product;
 
 import java.util.List;
 
 public interface EmployeeServices {
 
-    public Employee save(Employee employee);
+    public Product save(Product product);
 
-    public List<Employee> findAll();
+    public List<Product> findAll();
 
-    List<Employee> findByCustomName(String name);
+    List<Product> findByCustomName(String name);
 }

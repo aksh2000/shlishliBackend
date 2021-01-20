@@ -18,14 +18,14 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
     
-    private Long customerId;
-    private Long inventoryId;
-    private int quantity;
+    public Long customerId;
+    public Long inventoryId;
+    public int quantity;
 
-    private String status;
+    public String status;
 
 
-    private Date orderedOn = new Date();
+    public Date orderedOn = new Date();
 
 
     public Long getOrderId() {

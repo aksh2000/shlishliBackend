@@ -1,0 +1,505 @@
+
+
+
+[
+  {​​​​​​​​
+    "categoryId":1,
+      "productName":"nike shoe jordan",
+      "description":"most favored shoes",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fphoto-1589187928505-f6af6c26d1ed.jpeg?alt=media&token=9cb7668f-3a38-4179-ace1-7a35101f4b4e",
+      "size":"7",
+      "color":"white",
+      "usp":null,
+      "topProduct":true
+  }​​​​​​​​,
+  
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"nike navy brown shoes",
+    "description":"comfy shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fsports-4878991__480.jpg?alt=media&token=7038fdc1-3ab8-462c-aa5f-42a5c75045bb",
+    "size":"7",
+    "color":"brown",
+    "usp":null,
+    "topProduct":false
+  },
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"puma red shoe",
+    "description":"most favored shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fphoto-1575537302964-96cd47c06b1b.jpeg?alt=media&token=c6fa9c9f-d546-44be-9d1e-2f0c7f04c673",
+    "size":"7",
+    "color":"Red",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"Leather shoe",
+    "description":"most Stylish shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fistockphoto-172417586-170x170.jpg?alt=media&token=e2e96525-2415-4382-8f16-01e2a0eee6e4",
+    "size":"7",
+    "color":"Black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"Stylish leather shoe",
+    "description":"most comfy shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fwingtip-1684700__480.webp?alt=media&token=a9b3a89b-1c3f-4768-9404-5ad340ab1c96",
+    "size":"7",
+    "color":"Brown",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"awesome nike blue shoe",
+    "description":"best shoe must have",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fphoto-1515955656352-a1fa3ffcd111.jpeg?alt=media&token=04356e13-9531-42bf-9848-96ebc1f5ea93",
+    "size":"7",
+    "color":"Blue",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"nike  red shoe",
+    "description":"most favored  and comfortable shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fphoto-1542291026-7eec264c27ff.jpeg?alt=media&token=28e94c86-2b91-4e46-a772-62b74ad9bb29",
+    "size":"7",
+    "color":"Red",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"sketchers shoe",
+    "description":"most favored shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fphoto-1554735490-5974588cbc4f.jpeg?alt=media&token=4bcc2164-536f-4b0b-abcd-8c9bbab09a1a",
+    "size":"7",
+    "color":"Pink",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"Boat shoe",
+    "description":"most favored shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fshoes-825671__480.webp?alt=media&token=02dc55d9-939b-4cb2-9249-27bde5f850ff",
+    "size":"7",
+    "color":"brown",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,
+  {​​​​​​​​
+    "categoryId":1,
+    "productName":"vans shoe",
+    "description":"most stylish and comfortable shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/shoes%2Fphoto-1525966222134-fcfa99b8ae77.jpeg?alt=media&token=2c7906c4-ee6a-4f8d-b3d3-cd87b04761c9",
+    "size":"7",
+    "color":"red",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,  
+  
+  
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"nike benassi slider",
+    "description":"most favored sliders",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fbenassi-jdi-sandal-TW79BB.jpg?alt=media&token=5dd060fc-2e22-40f8-bb46-514fd94d3a47",
+    "size":"7",
+    "color":"blue",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,       
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"English nike",
+    "description":"most favored and comfy sliders",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Feng_pl_Nike-Benassi-JDI-343880-016-32308_3.jpg?alt=media&token=85406952-b8e6-470d-8342-9c336a6c6e49",
+    "size":"7",
+    "color":"Pink",
+    "usp":null,
+    "topProduct":true
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"ucb awesome slider",
+    "description":"most favored sliders",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fimages%20(2).jpeg?alt=media&token=9bd58e4a-0b87-4ece-a5fd-08718db8e8b9",
+    "size":"7",
+    "color":"black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"vans black slider",
+    "description":"most favored shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fimages%20(1).jpeg?alt=media&token=d1473647-2cb3-4d0d-8cf2-d91fc9ea7c3a",
+    "size":"7",
+    "color":"Black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"Rocket sliders",
+    "description":"most favored sliders most comfy",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fimages%20(3).jpeg?alt=media&token=a2e0cd88-e2af-41ea-b23f-02248b5a2970",
+    "size":"7",
+    "color":"black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"adidas black slider",
+    "description":"most favored sliders",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fimages%20(4).jpeg?alt=media&token=136d1637-4c43-47ef-8d73-bf2a612cb92a",
+    "size":"7",
+    "color":"white",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"adidas navy sliders",
+    "description":"most favored sliders and super comfort",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fimages%20(5).jpeg?alt=media&token=7dc2f427-f082-45a4-9eeb-6355f9fc3a85",
+    "size":"7",
+    "color":"blue",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"adidas navy blue slider",
+    "description":"most favored shoes",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fimages%20(6).jpeg?alt=media&token=5fe4609b-813a-4b23-b9b0-7857d11787f7",
+    "size":"7",
+    "color":"blue",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"nike shoe",
+    "description":"most favored shoes",
+    "imageUrl":"pink-hawai-slipper-500x500.jpg",
+    "size":"7",
+    "color":"Pink",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,          
+  {​​​​​​​​
+    "categoryId":2,
+    "productName":"awesome sliders",
+    "description":"most favored sliders",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sliders%2Fimages.jpeg?alt=media&token=b810fb21-81c9-4c9b-a37e-e961820ef8b0",
+    "size":"7",
+    "color":"brown",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,   
+  {​​​​​​​​
+    "categoryId":3,
+    "productName":"aww sandals",
+    "description":"most favored sandals",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fdownload.jpeg?alt=media&token=033fc94b-0a9a-40a6-a9a2-236998953089",
+    "size":"7",
+    "color":"Pink",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,  
+  {​​​​​​​​
+    "categoryId":3,
+    "productName":"fila sandals",
+    "description":"most favored sandals and super comfy",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fimages%20(1).jpeg?alt=media&token=09920ae5-5007-4a5a-bd67-fa4c9d215741",
+    "size":"7",
+    "color":"Pink",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,{​​​​​​​​
+    "categoryId":3,
+    "productName":"ladies sandals",
+    "description":"most favored sandals",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fimages%20(2).jpeg?alt=media&token=754d6607-6c83-4ff4-b6d7-2a57f2556a24",
+    "size":"7",
+    "color":"Black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,{​​​​​​​​
+    "categoryId":3,
+    "productName":"normal sandals",
+    "description":"most favored sandals",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fimages%20(3).jpeg?alt=media&token=b3ed8f41-7b8e-4a48-bac8-1d0bb9dfb794",
+    "size":"7",
+    "color":"green",
+    "usp":null,
+    "topProduct":true
+  }​​​​​​​​,{​​​​​​​​
+    "categoryId":3,
+      "productName":"ladies awesome sandals",
+      "description":"most favored sandals",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fimages%20(4).jpeg?alt=media&token=4bc29b33-4a46-4e75-8288-f3ac6a34d1d2",
+      "size":"7",
+      "color":"Black",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,{​​​​​​​​
+    "categoryId":3,
+      "productName":"awesome red ladies sandals",
+      "description":"most favored sandals",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fimages.jpeg?alt=media&token=0d9b468c-9f11-42b2-887d-618be699bd5a",
+      "size":"7",
+      "color":"Red",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,{​​​​​​​​
+    "categoryId":3,
+      "productName":"girls sandals",
+      "description":"most favored sandals",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fphoto-1562273138-f46be4ebdf33.jpeg?alt=media&token=421936df-a5fb-47f1-9693-b8615df9eaab",
+      "size":"7",
+      "color":"red",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,{​​​​​​​​
+    "categoryId":3,
+      "productName":"black heel sandals",
+      "description":"most favored sandals",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fphoto-1584774704898-906f50ba0515.jpeg?alt=media&token=b08936d7-2dc9-427f-b7a8-bd70faba9906",
+      "size":"7",
+      "color":"black",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,{​​​​​​​​
+    "categoryId":3,
+      "productName":"grren men sandal",
+      "description":"most favored sandals",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fphoto-1596523027665-9da35ced2388.jpeg?alt=media&token=0702801d-0215-4e37-8de0-283fd1a03c96",
+      "size":"7",
+      "color":"green",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,
+  
+  
+  {​​​​​​​​
+    "categoryId":3,
+    "productName":"grey men sandal",
+    "description":"most favored sandals",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/sandals%2Fphoto-1603487742131-4160ec999306.jpeg?alt=media&token=2c4ce722-8f89-499e-93f0-c4def885b485",
+    "size":"7",
+    "color":"grey",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,  
+  
+  
+  {​​​​​​​​
+    "categoryId":4,
+    "productName":"blue crocs",
+    "description":"most favored crocs and premium to show and an awesome buy",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(1).jpeg?alt=media&token=a658d613-6c14-43bb-9132-6dfe8a3cdd8a",
+    "size":"7",
+    "color":"Blue",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+    "productName":"black crocs",
+    "description":"most favored crocs and premium to show and an awesome buy",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(2).jpeg?alt=media&token=29d2fc87-f723-4ba4-8480-2dc8488bc67b",
+    "size":"7",
+    "color":"black",
+    "usp":null,
+    "topProduct":true
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+      "productName":"pink crocs",
+      "description":"most favored crocs and premium to show and an awesome buy",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(3).jpeg?alt=media&token=2b11494e-42a2-4ded-840c-8fd6616b7762",
+      "size":"7",
+      "color":"Pink",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+      "productName":"green crocs",
+      "description":"most favored crocs",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(4).jpeg?alt=media&token=883442cf-cb79-404a-a758-0f289f2a2e63",
+      "size":"7",
+      "color":"green",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+      "productName":"nike green crocs",
+      "description":"most favored crocs and premium to show and an awesome buy",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(5).jpeg?alt=media&token=5c7a5dcc-1f55-46d0-9326-2a6fc93de111",
+      "size":"7",
+      "color":"green",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+      "productName":"nike white crocs",
+      "description":"most favored crocs and premium to show and an awesome buy",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(6).jpeg?alt=media&token=73b2ca6d-51fc-4cd8-8454-ecfe2f9b5db5",
+      "size":"7",
+      "color":"white",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+      "productName":"navy blue crocs",
+      "description":"most favored crocs and premium to show and an awesome buy",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(7).jpeg?alt=media&token=044fd08b-e159-4654-9d7f-32637a65cecd",
+      "size":"7",
+      "color":"Blue",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+      "productName":"Pitch black crocs",
+      "description":"most favored crocs and premium to show and an awesome buy",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages%20(8).jpeg?alt=media&token=20ffe2c7-81b0-4f12-a047-3e6a7bd4144b",
+      "size":"7",
+      "color":"Black",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,         {​​​​​​​​
+    "categoryId":4,
+      "productName":"nike crocs awesome",
+      "description":"most favored crocs and premium to show and an awesome buy",
+      "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fistockphoto-1031539174-170x170.jpg?alt=media&token=ab1be7da-c695-46fe-a750-4e20871ad838",
+      "size":"7",
+      "color":"grey",
+      "usp":null,
+      "topProduct":false
+  }​​​​​​​​,         
+  {​​​​​​​​
+    "categoryId":4,
+    "productName":"Commander crocs",
+    "description":"most favored crocs and premium to show and an awesome buy",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/crocs%2Fimages.jpeg?alt=media&token=1f8c8c94-c7fb-4dea-8e4b-3ac1af0d06a3",
+    "size":"7",
+    "color":"grey",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,         
+  
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"one8 flip flops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F-1117Wx1400H-460475787-black-MODEL.webp?alt=media&token=c0140c94-5ca9-4cbb-8d70-2727a83dbd3a",
+    "size":"9",
+    "color":"Black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"puma flip flops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F-473Wx593H-460475672-grey-MODEL.webp?alt=media&token=f72d0604-683f-413c-9f28-3d19030c38eb",
+    "size":"6",
+    "color":"Orange",
+    "usp":null,
+    "topProduct":true
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"sketchers flip flops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F15300_bbk_2.jpg?alt=media&token=2f28ee1a-99e1-4b87-b857-7110ed838efd",
+    "size":"10",
+    "color":"black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"flipflops awesome",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F210069_blk_4.jpg?alt=media&token=37d80b14-f466-4317-883e-d45d1ee18455",
+    "size":"7",
+    "color":"black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"premium flipflops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F210069_blk_4.jpg?alt=media&token=37d80b14-f466-4317-883e-d45d1ee18455",
+    "size":"9",
+    "color":"black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"orange blue flip flops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F240_F_161894360_bCU61XlA9JfM3139KfXZoR821BpVIDlk.jpg?alt=media&token=1f3de923-a6fd-404f-9d65-f40f9755d55b",
+    "size":"11",
+    "color":"orange",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"yellow ladies flipflops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F240_F_248584072_ZX0e92fhNSgHknGmJa6cd2lQCp2ZOAro.jpg?alt=media&token=f5ece94a-8d32-4302-91ae-12f3256eb488",
+    "size":"10",
+    "color":"Yellow",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"Black sketchers awesome flip flop",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F65093_blk_3.jpg?alt=media&token=910e0fa4-ba71-4cd2-81c3-072b2c23a63b",
+    "size":"9",
+    "color":"Black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"White flip flops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2F91cq6x5IdrL._UY575_.jpg?alt=media&token=a98e066d-4070-4c8d-9f5a-222320e8b840",
+    "size":"8",
+    "color":"white",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​,        
+  {​​​​​​​​
+    "categoryId":5,
+    "productName":"black awesome flip flops",
+    "description":"most favored flipflops and awesome and comfortable to wear",
+    "imageUrl":"https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/flipflops%2FSK_64152_BLK1.jpeg?alt=media&token=94ef9166-d6fa-493c-ab33-d379a97f1689",
+    "size":"7",
+    "color":"black",
+    "usp":null,
+    "topProduct":false
+  }​​​​​​​​
+  ] 
+  
+  
+  ​​​​​​​​
+  
+  
+  
+  

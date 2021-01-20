@@ -1,10 +1,7 @@
 package com.example.api.data.junction.service;
 
 import com.example.api.data.junction.VO.*;
-import com.example.api.data.junction.entity.CartItem;
-import com.example.api.data.junction.entity.Inventory;
-import com.example.api.data.junction.entity.Merchant;
-import com.example.api.data.junction.entity.Product;
+import com.example.api.data.junction.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -84,7 +81,12 @@ public class ApiDataJunctionService {
             TopProducts topProducts1 = new TopProducts();
             Inventory inventory = restTemplate.getForObject("http://INVENTORY-SERVICE/inventories/getMinPrice/"+product.getProductId(), Inventory.class);
             topProducts1.product = product;
-            topProducts1.price = inventory.getPrice();
+            if(inventory == null){
+                topProducts1.price = 0;
+            } else {
+                topProducts1.price = inventory.getPrice();
+            }
+
             topProducts.add(topProducts1);
         }
         responseTemplate.data = topProducts;
@@ -102,9 +104,14 @@ public class ApiDataJunctionService {
         for (Product product:products) {
             ProductWithPrice productWithPrice = new ProductWithPrice();
             Inventory inventory = restTemplate.getForObject("http://INVENTORY-SERVICE/inventories/getMinPrice/"+product.getProductId(), Inventory.class);
+//            System.out.println(product.getProductId()+"*********");
+            if(inventory == null){
 
+                productWithPrice.price = 0;
+            }else {
+                productWithPrice.price = inventory.getPrice();
+            }
             productWithPrice.product = product;
-            productWithPrice.price = inventory.getPrice();
             productWithPrices.add(productWithPrice);
         }
 
@@ -133,14 +140,82 @@ public class ApiDataJunctionService {
             customerCartDetails1.price = inventory.getPrice();
 
             customerCartDetails.add(customerCartDetails1);
-
-
-        }
-
-
-        responseTemplate.data = customerCartDetails;
+            customerCartDetails1.inventory = inventory;
+            customerCartDetails1.cartId = cartItem.getCartId();
+            }
+            responseTemplate.data = customerCartDetails;
         return responseTemplate;
 
 
+    }
+    public ResponseTemplate getOrderDetailsByCustomerId(Long customerId)
+    {
+        ResponseTemplate responseTemplate = new ResponseTemplate(true);
+
+        List<OrderDetailsByCustomerId> orderDetailsByCustomerId=new ArrayList<>();
+        List<Order> orders;
+
+        ResponseEntity<Order[]> responseEntity= restTemplate.getForEntity("http://ORDERS-SERVICE/orders/getOrderDetailsByCustomerId/"+ customerId, Order[].class);
+        orders = Arrays.asList(responseEntity.getBody());
+
+        for(Order order:orders)
+        {
+            OrderDetailsByCustomerId orderDetailsByCustomerId1=new OrderDetailsByCustomerId();
+            Inventory inventory = restTemplate.getForObject("http://INVENTORY-SERVICE/inventories/getInventoryDetails/"+order.getInventoryId(), Inventory.class);
+            Merchant merchant = restTemplate.getForObject("http://MERCHANT-SERVICE/merchants/getMerchantDetails/" + inventory.getMerchantId(), Merchant.class);
+            Product product = restTemplate.getForObject("http://PRODUCT-SERVICE/products/getProductDetails/"+inventory.getProductId(), Product.class);
+            Customer customer=restTemplate.getForObject("http://CUSTOMER-SERVICE/customers/getCustomerDetails/"+ order.getCustomerId(), Customer.class);
+            orderDetailsByCustomerId1.order=order;
+            orderDetailsByCustomerId1.product=product;
+            orderDetailsByCustomerId1.inventory=inventory;
+            orderDetailsByCustomerId1.merchant=merchant;
+            orderDetailsByCustomerId1.customer=customer;
+
+            orderDetailsByCustomerId.add(orderDetailsByCustomerId1);
+        }
+
+        responseTemplate.data =orderDetailsByCustomerId;
+        return  responseTemplate;
+    }
+
+    public ResponseTemplate getOrderDetailsByMerchantId(Long merchantId) {
+        ResponseTemplate responseTemplate = new ResponseTemplate(true);
+
+        List<Inventory> inventories;
+
+        ResponseEntity<Inventory[]> responseEntityInventories= restTemplate.getForEntity("http://INVENTORY-SERVICE/inventories/findByMerchantId/"+merchantId, Inventory[].class);
+        inventories = Arrays.asList(responseEntityInventories.getBody());
+
+        List<OrderDetailsByMerchantId> orderDetailsByMerchantIds = new ArrayList<>();
+
+
+        for (Inventory inventory: inventories) {
+            List<Order> orders;
+            ResponseEntity<Order[]> responseEntityOrders= restTemplate.getForEntity("http://ORDERS-SERVICE/orders/findByInventoryId/"+inventory.getInventoryItemId(), Order[].class);
+            orders = Arrays.asList(responseEntityOrders.getBody());
+
+            for (Order order: orders) {
+
+                OrderDetailsByMerchantId orderDetailsByMerchantId = new OrderDetailsByMerchantId();
+
+                Customer customer = restTemplate.getForObject("http://CUSTOMER-SERVICE/customers/getCustomerDetails/"+ order.getCustomerId(), Customer.class);
+                Product product = restTemplate.getForObject("http://PRODUCT-SERVICE/products/getProductDetails/"+inventory.getProductId(), Product.class);
+                Merchant merchant = restTemplate.getForObject("http://MERCHANT-SERVICE/merchants/getMerchantDetails/" + inventory.getMerchantId(), Merchant.class);
+
+                orderDetailsByMerchantId.customer = customer;
+                orderDetailsByMerchantId.product = product;
+                orderDetailsByMerchantId.inventory = inventory;
+                orderDetailsByMerchantId.order = order;
+                orderDetailsByMerchantId.merchant = merchant;
+
+                orderDetailsByMerchantIds.add(orderDetailsByMerchantId);
+            }
+        }
+
+        responseTemplate.data = orderDetailsByMerchantIds;
+
+
+
+        return  responseTemplate;
     }
 }

@@ -15,7 +15,6 @@ public class CartItem {
     private Integer quantity;
     private Long inventoryId;
 
-
     public Long getCartId() {
         return cartId;
     }

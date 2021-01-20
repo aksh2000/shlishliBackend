@@ -22,8 +22,8 @@ public interface InventoryRepository extends CrudRepository<InventoryItem, Long>
     */
     @Modifying
     @Transactional
-    @Query(value = "update inventory_item set quantity=?3  where product_id=?1 and merchant_id=?2", nativeQuery = true)
-    void updateQuantity(Long productId, Long merchantId, Integer quantity);
+    @Query(value = "update inventory set quantity=?2  where inventory_item_id=?1", nativeQuery = true)
+    void updateQuantity(Long inventoryId, Integer quantity);
 
 
 

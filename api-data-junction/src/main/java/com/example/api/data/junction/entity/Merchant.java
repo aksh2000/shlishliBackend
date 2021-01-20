@@ -2,9 +2,10 @@ package com.example.api.data.junction.entity;
 
 public class Merchant   {
 
+
     private Long merchantId;
 
-    private String firebaseCustomerId;
+    private String firebaseMerchantId;
 
     private String businessName;
     private String firstName;
@@ -14,9 +15,9 @@ public class Merchant   {
     private int rating;
     private String gstNumber;
 
-    public Merchant(Long merchantId, String firebaseCustomerId, String businessName, String firstName, String lastName, String address, String mobileNumber, int rating, String gstNumber) {
+    public Merchant(Long merchantId, String firebaseMerchantId, String businessName, String firstName, String lastName, String address, String mobileNumber, int rating, String gstNumber) {
         this.merchantId = merchantId;
-        this.firebaseCustomerId = firebaseCustomerId;
+        this.firebaseMerchantId = firebaseMerchantId;
         this.businessName = businessName;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -37,12 +38,12 @@ public class Merchant   {
         this.merchantId = merchantId;
     }
 
-    public String getFirebaseCustomerId() {
-        return firebaseCustomerId;
+    public String getFirebaseMerchantId() {
+        return firebaseMerchantId;
     }
 
-    public void setFirebaseCustomerId(String firebaseCustomerId) {
-        this.firebaseCustomerId = firebaseCustomerId;
+    public void setFirebaseMerchantId(String firebaseMerchantId) {
+        this.firebaseMerchantId = firebaseMerchantId;
     }
 
     public String getBusinessName() {

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Shoes",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/categories%2Fphoto-1552867544-184c9903cddf.jpeg?alt=media&token=550e5957-2805-49f1-b71d-1e22905ab743"
+  },
+  {
+    "name": "Sliders",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/categories%2Fsliders.jpeg?alt=media&token=0d29c0ab-c01a-4603-bbef-0ac0b2dbd99a"
+  },
+  
+  {
+    "name": "Sandals",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/categories%2Fimage.jpeg?alt=media&token=febc4d95-75ae-4594-86e8-b73b7b096c37"
+  },
+  
+  {
+    "name": "Crocs",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/categories%2Fcrocs.jpg?alt=media&token=aaeb0f05-5a34-4619-be1b-c4f04bbd4241"
+  },
+  
+  {
+    "name": "Flip-Flops",
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shlishli.appspot.com/o/categories%2F23-237854_flipflops-on-a-beach.jpg?alt=media&token=a9ca6795-dc5e-4f7c-97ac-06736b25f55b"
+  }
+  ]
+  
