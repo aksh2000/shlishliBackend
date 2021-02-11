@@ -9,7 +9,7 @@ public class ProductsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProductsApplication.class, args);
 		//changing for merge
-		Integer f;
+		String f;
 	}
 
 }
