@@ -8,7 +8,7 @@ public class ProductsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProductsApplication.class, args);
-		//Hello this //testing for merge conflict
+		//changing for merge
 	}
 
 }
